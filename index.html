@@ -9,9 +9,9 @@
  <script>
     function clicked(){
         document.getElementById("details").style.display = "block";
-       document.getElementById("pname").innerHTML+=document.getElementById("name").value;
-       document.getElementById("pprice").innerHTML+=document.getElementById("price").value;
-       document.getElementById("pcity").innerHTML+=document.getElementById("city").value;
+       document.getElementById("pname").innerHTML=document.getElementById("name").value;
+       document.getElementById("pprice").innerHTML=document.getElementById("price").value;
+       document.getElementById("pcity").innerHTML=document.getElementById("city").value;
        stockvalue=document.getElementById("stock")
        result=""
        if(stockvalue.checked){
@@ -20,7 +20,7 @@
        else{
         result= "Not In Stock"
        }
-       document.getElementById("pstock").innerHTML+=result; 
+       document.getElementById("pstock").innerHTML=result; 
        
        
     }
